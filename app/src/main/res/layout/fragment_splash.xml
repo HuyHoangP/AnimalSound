@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fr_splash"
+    android:background="@mipmap/bg_farm"
+    tools:context=".view.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivSquare"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:rotation="45"
+                android:scaleType="centerInside"
+                android:src="@drawable/bg_square" />
+
+            <ImageView
+                android:id="@+id/ivOwl"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:elevation="1dp"
+                android:src="@mipmap/ic_owl" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/white"
+            android:shadowRadius="5"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="ANIMAL SOUND"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+</FrameLayout>
